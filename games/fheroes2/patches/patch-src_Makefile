@@ -1,0 +1,14 @@
+$OpenBSD$
+--- src/Makefile.orig	Thu Aug 21 02:39:01 2014
++++ src/Makefile	Thu Aug 21 02:39:16 2014
+@@ -64,6 +64,10 @@ endif
+ ifeq ($(OS),FreeBSD)
+ PLATFORM := bsd
+ endif
++ifeq ($(OS),OpenBSD)
++PLATFORM := bsd
++CFLAGS := $(CFLAGS) -D'CONFIGURE_FHEROES2_DATA="/usr/local/share/fheroes2"'
++endif
+ ifeq ($(OS),Darwin)
+ PLATFORM := osx
+ endif

@@ -1,0 +1,25 @@
+@comment $OpenBSD$
+@bin bin/fheroes2
+share/fheroes2/
+share/fheroes2/data/
+share/fheroes2/fheroes2.cfg
+share/fheroes2/files/
+share/fheroes2/files/fonts/
+share/fheroes2/files/fonts/bigfonts.ttf
+share/fheroes2/files/fonts/dejavusans.ttf
+share/fheroes2/files/fonts/smallfonts.ttf
+share/fheroes2/files/save/
+share/fheroes2/files/sounds/
+share/fheroes2/files/stats/
+share/fheroes2/files/stats/animations.xml
+share/fheroes2/files/stats/artifacts.xml
+share/fheroes2/files/stats/battle.xml
+share/fheroes2/files/stats/buildings.xml
+share/fheroes2/files/stats/globals.xml
+share/fheroes2/files/stats/monsters.xml
+share/fheroes2/files/stats/payments.xml
+share/fheroes2/files/stats/profits.xml
+share/fheroes2/files/stats/skills.xml
+share/fheroes2/files/stats/spells.xml
+share/fheroes2/files/stats/stevenaus-03.7z
+share/fheroes2/maps/
