@@ -1,0 +1,14 @@
+$OpenBSD$
+--- SConstruct.orig	Mon Apr 21 02:05:35 2008
++++ SConstruct	Fri Aug 29 00:18:48 2014
+@@ -144,8 +144,8 @@ Files will be installed on <prefix>/bin, <prefix>/lib 
+ 
+ ########### end of helper builders
+ 
+-env['CPPPATH'] = '#/include'
+-env['LIBPATH'] =  ['#/lib'] + env['LIBPATH']
++env['CPPPATH'] =  ['#/include/','/usr/local/include/include', '/usr/local/include/lua-5.1']
++env['LIBPATH'] =  ['#/lib', env['LIBPATH'], '/usr/local/lib/lua/5.1']
+ 
+ if env['no_cygwin']:
+ 
