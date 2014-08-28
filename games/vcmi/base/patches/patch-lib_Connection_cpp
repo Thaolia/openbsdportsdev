@@ -1,0 +1,16 @@
+$OpenBSD$
+--- lib/Connection.cpp.orig	Thu Aug 28 21:58:26 2014
++++ lib/Connection.cpp	Thu Aug 28 22:42:15 2014
+@@ -3,7 +3,12 @@
+ 
+ #include "registerTypes/RegisterTypes.h"
+ 
++#if defined( __OpenBSD__)
++typedef unsigned long long blkcnt_t;
++#endif
++
+ #include <boost/asio.hpp>
++
+ 
+ /*
+  * Connection.cpp, part of VCMI engine

@@ -1,0 +1,22 @@
+$OpenBSD$
+--- client/Client.cpp.orig	Thu Aug 28 23:21:10 2014
++++ client/Client.cpp	Thu Aug 28 22:57:42 2014
+@@ -1,5 +1,10 @@
+ #include "StdInc.h"
+ 
++#if defined( __OpenBSD__)
++typedef unsigned long long blkcnt_t;
++#endif
++
++
+ #include "CMusicHandler.h"
+ #include "../lib/mapping/CCampaignHandler.h"
+ #include "../CCallback.h"
+@@ -40,6 +45,7 @@ extern std::string NAME;
+ #ifndef __ANDROID__
+ namespace intpr = boost::interprocess;
+ #endif
++
+ 
+ /*
+  * Client.cpp, part of VCMI engine
