@@ -15,6 +15,7 @@ HOMEPAGE=	http://fheroes2.sourceforge.net/
 
 # Conditional
 PERMIT_PACKAGE_CDROM=	Yes
+WANTLIB += iconv m png pthread stdc++ z
 WANTLIB += SDL SDL_image SDL_mixer SDL_net c SDL_ttf
 
 LIB_DEPENDS=	devel/sdl-image \
