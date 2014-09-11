@@ -9,7 +9,7 @@ CATEGORIES =	audio
 
 HOMEPAGE =	https://github.com/np1/mps
 
-#MAINTAINER =	Paul Irofti <pirofti@openbsd.org>
+#MAINTAINER =	James Lecocq <james@james.cx>
 
 # Public Domain
 PERMIT_PACKAGE_CDROM =		Yes
