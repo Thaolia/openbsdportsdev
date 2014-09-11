@@ -67,6 +67,7 @@ PERMIT_PACKAGE_CDROM = Yes
 
 # "make port-lib-depends-check" can help
 #WANTLIB =		???
+WANTLIB += c m pcap pthread
 
 # where the source files and patches can be fetched
 #
