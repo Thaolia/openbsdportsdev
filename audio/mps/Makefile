@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.97 2014/09/03 06:03:40 dcoppa Exp $
+# $OpenBSD: Makefile
 
 COMMENT =	CLI program to download videos from YouTube and other sites
 
@@ -9,7 +9,7 @@ CATEGORIES =	audio
 
 HOMEPAGE =	https://github.com/np1/mps
 
-#MAINTAINER =	James Lecocq <james@james.cx>
+MAINTAINER =	James Lecocq <jlq@tmp.li>
 
 # Public Domain
 PERMIT_PACKAGE_CDROM =		Yes

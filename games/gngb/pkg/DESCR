@@ -1,3 +1,10 @@
 Gngb is a gbc emulator for linux written in C using the SDL. Gngb is a free
 software distributed under the termes of the GNU GeneralPublic License.
 It support most of Gameboy and Color Gameboy games. 
+
+Controls : 
+	X = A
+	W = B
+	Enter = Start
+	Shift = Select
+

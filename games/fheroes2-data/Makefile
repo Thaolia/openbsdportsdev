@@ -1,17 +1,20 @@
-# $OpenBSD: Makefile,v 1.39 2013/03/10 22:28:05 espie Exp $
+# $OpenBSD: Makefile
 
-COMMENT=	implementation of classic game Heroes of Might and Magic II
+COMMENT =	implementation of classic game Heroes of Might and Magic II
 
-VERSION=	1.0
-PKGNAME=	fheroes2-data-${VERSION}
-DISTFILES=	h2demo.zip EssentialMapPack.zip AdditionalMapPack.zip MegaMapPack.zip
-CATEGORIES=	games
-MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=libsdl-android/}
+VERSION =	1.0
+PKGNAME =	fheroes2-data-${VERSION}
+DISTFILES =	h2demo.zip EssentialMapPack.zip AdditionalMapPack.zip MegaMapPack.zip
 
-HOMEPAGE=	http://fheroes2.sourceforge.net/
+MAINTAINER =    James Lecocq <jlq@tmp.li>
+
+CATEGORIES =	games
+MASTER_SITES =	${MASTER_SITE_SOURCEFORGE:=libsdl-android/}
+
+HOMEPAGE =	http://fheroes2.sourceforge.net/
 
 # Conditional
-PERMIT_PACKAGE_CDROM=	Yes
+PERMIT_PACKAGE_CDROM =	Yes
 
 
 NO_TEST =       Yes
@@ -25,6 +28,5 @@ do-install:
 	${INSTALL_DATA} ${WRKDIST}/MAPS/*{.mx2,.MX2} ${PREFIX}/share/fheroes2/maps
 	${INSTALL_DATA} ${WRKDIST}/DATA/* ${PREFIX}/share/fheroes2/data
 	${INSTALL_DATA} ${WRKDIST}/license.txt ${PREFIX}/share/fheroes2/data
-
 
 .include <bsd.port.mk>

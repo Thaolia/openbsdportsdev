@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.97 2014/09/03 06:03:40 dcoppa Exp $
+# $OpenBSD: Makefile
 
 COMMENT =	CLI program to download/streaming music from YouTube
 
@@ -9,9 +9,8 @@ CATEGORIES =	audio
 
 HOMEPAGE =	https://github.com/np1/mps-youtube
 
-#MAINTAINER =	James Lecocq <james@james.cx>
+MAINTAINER =    James Lecocq <jlq@tmp.li>
 
-# Public Domain
 PERMIT_PACKAGE_CDROM =		Yes
 
 MASTER_SITES =	${MASTER_SITE_PYPI:=m/mps-youtube/}
