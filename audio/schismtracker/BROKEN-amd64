@@ -1,0 +1,27 @@
+(gdb) run
+Starting program: /usr/local/bin/schismtracker 
+[New process 28230]
+
+Program received signal SIGSEGV, Segmentation fault.
+[Switching to thread 1015125]
+memmove (dst0=0x315007b4230, src0=0x315007b56dc, length=0) at
+/usr/src/lib/libc/string/bcopy.c:91
+91                              TLOOP1(*dst++ = *src++);
+(gdb) bt full
+#0  memmove (dst0=0x315007b4230, src0=0x315007b56dc, length=0) at
+# /usr/src/lib/libc/string/bcopy.c:91
+        dst = 0x315007b4230 ""
+        src = 0x315007b56dc <Address 0x315007b56dc out of bounds>
+        t = 3528
+#1  0x0000031263772d65 in song_set_current_tempo () from
+/usr/local/bin/schismtracker
+No symbol table info available.
+#2  0x00000314ff0f9ab1 in SDL_RunAudio () from /usr/local/lib/libSDL.so.8.0
+No symbol table info available.
+#3  0x00000314ff101b57 in SDL_RunThread () from /usr/local/lib/libSDL.so.8.0
+No symbol table info available.
+#4  0x00000314ff13dce9 in RunThread () from /usr/local/lib/libSDL.so.8.0
+No symbol table info available.
+#5  0x00000314bfd6699e in _rthread_start (v=Variable "v" is not available.
+) at /usr/src/lib/librthread/rthread.c:145
+        retval = Variable "retval" is not available.
