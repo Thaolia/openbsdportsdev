@@ -1,0 +1,12 @@
+$OpenBSD$
+--- Makefile.in.orig	Thu Oct 23 14:45:44 2014
++++ Makefile.in	Thu Oct 23 14:46:08 2014
+@@ -45,7 +45,7 @@ bin_PROGRAMS = schismtracker$(EXEEXT)
+ @NEED_MEMCMP_TRUE@am__append_5 = sys/stdlib/memcmp.c
+ @NEED_STRPTIME_TRUE@am__append_6 = sys/stdlib/strptime.c
+ @NEED_MKSTEMP_TRUE@am__append_7 = sys/stdlib/mkstemp.c
+-@USE_WIN32_FALSE@am__append_8 = -ldl
++#@USE_WIN32_FALSE@am__append_8 = -ldl
+ subdir = .
+ DIST_COMMON = README $(am__configure_deps) $(dist_man_MANS) \
+ 	$(noinst_HEADERS) $(srcdir)/Makefile.am $(srcdir)/Makefile.in \
