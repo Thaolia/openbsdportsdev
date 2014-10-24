@@ -5,7 +5,10 @@ COMMENT =		gbc emulator for linux written in C using the SDL
 V =			20060309
 DISTNAME =		gngb-${V}
 
-CATEGORIES =		games
+CATEGORIES =		emulators
+
+# GPL
+PERMIT_PACKAGE_CDROM =	Yes
 
 HOMEPAGE =		http://m.peponas.free.fr/gngb/
 
